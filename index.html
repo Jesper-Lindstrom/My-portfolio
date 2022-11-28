@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jesper Lindström | Front end developer</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="desktop.css" />
-    <link rel="stylesheet" href="tablet.css" />
-    <link rel="stylesheet" href="mobile.css" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="stylesheet" href="./tablet.css" />
+    <link rel="stylesheet" href="./desktop.css" />
   </head>
   <body>
     <div class="header">
-      <div class="nav-bar">
-        <div class="user">
-          <img class="user-img src=" alt="" />
+      <div class="nav-bar flex space-between">
+        <div class="user flex m1 p1 gap1">
+          <img class="avatar" src="./images/avatarbigger.png" alt="" />
           <p>&lt; Jesper Lindström &gt;</p>
         </div>
-        <ul class="nav-items-list">
+        <ul class="nav-items-list flex gap1 m1 p1 noliststyle">
           <li class="nav-item">Home</li>
           <li class="nav-item">About</li>
           <li class="nav-item">Skills</li>
@@ -27,11 +29,11 @@
       </div>
     </div>
 
-    <div class="main-content">
+    <div class="main-content flex">
       <div class="split left">
-        <div class="left-content">
+        <div class="left-content p1 m1">
           <h1>Front end developer</h1>
-          <h3>
+          <h3 class="medium-font">
             Hi! I'm Jesper and I am studying to become a front end developer at
             @Medieinstitutet in Gothenburg. This is where I will show <br />
             my progression through theese two years where I strive to become
@@ -39,13 +41,15 @@
           </h3>
         </div>
       </div>
-      <div class="split right">
-        <div class="right-content"></div>
+      <div class="split right flex justify-center align-center">
+        <div class="right-content just">
+          <img class="big-avatar" src="./images/Avatarbigger.png" alt="" />
+        </div>
       </div>
     </div>
 
     <div>
-      <!-- <p>placeholder for future content</p> -->
+      <p>placeholder for future content</p>
     </div>
   </body>
 </html>

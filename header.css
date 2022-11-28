@@ -1,0 +1,20 @@
+.header {
+    padding: 0 7rem 0 7rem;
+    background-color: #2d2e32d0;
+    color: white;
+}
+
+.avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-bar {
+    /* padding: 0 5rem 0rem 5rem ; */
+}
+
+.nav-item {
+    padding: 1.2rem;
+}
