@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* color: white; */
     font-family: sans-serif;
 }
 
@@ -14,6 +13,10 @@ body {
         #00203FFF 50%,
         #ADEFD1FF 50%,
         #ADEFD1FF 100%);
+}
+
+h1 {
+    font-size: 40px;
 }
 
  .split {
@@ -45,7 +48,14 @@ body {
     height: 500px;
     border-radius: 50%;
     object-fit: cover;
+}
 
+.menu-link {
+    color: inherit;
+}
+
+.menu-link:hover {
+    color: red;
 }
 
 /* reusable ccs-classes */
@@ -61,4 +71,5 @@ body {
 .m1 {margin: 1rem;}
 .gap1 {gap: 1rem;}
 .noliststyle {list-style: none;}
+.notextstyle {text-decoration: none;}
 .medium-font {font-size: 13px;}
