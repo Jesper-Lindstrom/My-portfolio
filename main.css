@@ -1,12 +1,18 @@
+:root {
+    --main-color: #252525ef;
+    --hover-color: red;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .main-content {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(
         to right,
         #00203FFF 0%,
@@ -31,7 +37,7 @@ h1 {
     display: flex;
     max-width: 50%;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     color: #ADEFD1FF;
     
 }
@@ -39,7 +45,7 @@ h1 {
     display: flex;
     max-width: 50%;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     color: #00203FFF;
 } 
 
@@ -55,12 +61,14 @@ h1 {
 }
 
 .menu-link:hover {
-    color: red;
+    color: var(--hover-color);
 }
 
 /* reusable ccs-classes */
 
 .flex {display: flex;}
+.grid {display: grid;}
+.grid-4column {grid-template-columns: auto auto auto auto;}
 .justify-center {justify-content: center; }
 .align-center {align-items: center;}
 .column {flex-direction: column;}
