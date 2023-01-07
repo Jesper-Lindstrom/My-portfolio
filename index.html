@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jesper Lindström | Front end developer</title>
     <script src="./main.js"></script>
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./header.css" />
-    <link rel="stylesheet" href="./skills.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
     <!-- <link rel="stylesheet" href="./mobile.css" />
     <link rel="stylesheet" href="./tablet.css" />
     <link rel="stylesheet" href="./desktop.css" /> -->
@@ -18,63 +18,58 @@
       <div class="nav-bar flex space-between">
         <div class="user flex m1 p1 gap1">
           <img class="avatar" src="./images/avatarbigger.png" alt="" />
-          <p>&lt; Jesper Lindström &gt;</p>
+          <p class="my-name">Jesper Lindström</p>
         </div>
-        <ul class="nav-items-list flex gap1 m1 p1 noliststyle">
+        <ul class="nav-items-list flex gap1 m1 p1">
           <li class="nav-item p1 flex justify-center">
-            <a class="menu-link notextstyle" href="#">Home</a>
+            <a class="menu-link" href="#">Home</a>
           </li>
           <li class="nav-item p1 flex justify-center">
-            <a class="menu-link notextstyle" href="#">About</a>
+            <a class="menu-link" href="#">Projects</a>
           </li>
           <li class="nav-item p1 flex justify-center">
-            <a class="menu-link notextstyle" href="#">Skills</a>
+            <a class="menu-link" href="#">Contact</a>
           </li>
-          <li class="nav-item p1 flex justify-center">
-            <a class="menu-link notextstyle" href="#">Projects</a>
-          </li>
-          <li class="nav-item p1 flex justify-center cv-button">
-            <a class="menu-link notextstyle justify-center" href="#">CV</a>
+          <li class="cv-button p1 flex justify-center">
+            <a class="menu-link justify-center" href="#">CV</a>
           </li>
         </ul>
       </div>
     </div>
 
     <div class="main-content flex">
-      <div class="split left">
-        <div class="left-content p1 m1">
-          <h1>Front end developer</h1>
-          <h3 class="medium-font">
+      <div class="split left flex justify-center">
+        <div class="left-content flex column ali p1 m1">
+          <h1 class="p1">Front end developer</h1>
+          <h3 class="p1">
             Hi! I'm Jesper and I am studying to become a front end developer at
             @Medieinstitutet in Gothenburg. This is where I will show <br />
             my progression through theese two years where I strive to become
             better at web development.
           </h3>
+          <div class="skills-wrapper flex justify-center p1">
+            <img
+              class="skill-image"
+              src="./images/html5biggerlogo.svg"
+              alt=""
+            />
+
+            <img class="skill-image" src="./images/css3biggerlogo.svg" alt="" />
+
+            <img class="skill-image" src="./images/jsbiggerlogo.svg" alt="" />
+
+            <img class="skill-image" src="./images/Git-Logo-White.svg" alt="" />
+          </div>
         </div>
       </div>
       <div class="split right flex justify-center align-center">
         <div class="right-content flex column justify-center align-center p1">
           <img class="big-avatar" src="./images/Avatarbigger.png" alt="" />
-          <div class="icons-row p1"> <img src="./icons/giticon.svg" alt="">
-          <img src="./icons/linkedinicon.svg" alt=""></div>
-
+          <div class="icons-row p1">
+            <img src="./icons/giticon.svg" alt="" />
+            <img src="./icons/linkedinicon.svg" alt="" />
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="skills-container grid">
-      <h2 class="skills-headline grid justify-center align-center">Skills</h2>
-      
-        <div class="skill-item1 grid justify-center align-center"><img class="skill-image" src="./images/html5biggerlogo.svg" alt=""></div>
-        <div class="skill-item2 grid justify-center align-center"><img class="skill-image" src="./images/css3biggerlogo.svg" alt=""></div>
-        <div class="skill-item3 grid justify-center align-center"><img class="skill-image" src="./images/jsbiggerlogo.svg" alt=""></div>
-        <div class="skill-item4 grid justify-center align-center"><img class="skill-image" src="./images/Git-Logo-White.svg" alt=""></div>
-        <h2 class="learning-headline grid justify-center align-center">Upcoming</h2>
-        <div class="skill-item5 grid justify-center align-center"><img class="skill-image" src="./images/html5biggerlogo.svg" alt=""></div>
-        <div class="skill-item6 grid justify-center align-center"><img class="skill-image" src="./images/css3biggerlogo.svg" alt=""></div>
-        <div class="skill-item7 grid justify-center align-center"><img class="skill-image" src="./images/jsbiggerlogo.svg" alt=""></div>
-        <div class="skill-item8 grid justify-center align-center"><img class="skill-image" src="./images/Git-Logo-White.svg" alt=""></div>
-       
       </div>
     </div>
   </body>

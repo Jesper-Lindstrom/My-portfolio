@@ -1,6 +1,9 @@
 .header {
     background-color: #252525ef;
     color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .avatar {
@@ -14,7 +17,7 @@
     /* padding: 0 5rem 0rem 5rem ; */
 }
 
-.nav-item {
+.nav-item, .cv-button {
     /* padding: 1.2rem; */
     height: 1rem;
     width:3.6rem
@@ -25,4 +28,28 @@
     border-radius: 10%;
     background-color: #29292cd0;
    
+}
+
+.menu-link {
+  color: inherit;
+}
+
+.menu-link:hover {
+  color: var(--hover-color);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .nav-item {
+    display: none;
+  }
+  .my-name {
+    display: none;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-menu-button {
+    display: none;
+  }
 }
