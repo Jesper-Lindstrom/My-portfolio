@@ -1,4 +1,4 @@
-.header {
+header {
     background-color: #252525ef;
     color: white;
     position: fixed;
@@ -38,8 +38,12 @@
   color: var(--hover-color);
 }
 
+.burger-menu-button {
+  font-size: 2rem;
+}
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 774px) {
   .nav-item {
     display: none;
   }
@@ -48,7 +52,7 @@
 }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 775px) {
   .burger-menu-button {
     display: none;
   }
