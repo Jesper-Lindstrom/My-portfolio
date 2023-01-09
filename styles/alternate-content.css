@@ -9,6 +9,15 @@
 
 }
 
+.project-content {
+  height: 100%;
+  background-color: rgb(21, 60, 98);
+}
+
+.project-container {
+  
+}
+
 .project-title {
   color: white;
   font-size: clamp(0.8rem, 1.9vw, 1.4rem);
@@ -24,9 +33,10 @@
 }
 
 .project-image {
-  width: clamp(10rem, 12vw, 25rem);
-  height: clamp(10rem, 12vw, 25rem);
+  width: clamp(10rem, 20vw, 25rem);
+  height: clamp(10rem, 20vw, 25rem);
   object-fit: cover;
+  
 }
 
 .contact-container {
@@ -47,9 +57,16 @@
   border-radius: 25%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 660px) {
   .project-container{
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 405px) {
+  .project-image {
+   width: 8rem;
+
     }
 }
 
