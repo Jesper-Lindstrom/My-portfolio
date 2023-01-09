@@ -2,7 +2,7 @@ header {
     top: 0;
     background-color: #252525ef;
     color: white;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
 
 }
@@ -38,7 +38,7 @@ header {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
   width: 100%;
   background-color: #252222ef;
   top: 8rem;
@@ -47,7 +47,8 @@ header {
 }
 
 .close {
-  display: none;
+  display: unset;
+  margin: 0;
 }
 
 
