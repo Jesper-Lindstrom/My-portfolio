@@ -1,19 +1,14 @@
 
-window.addEventListener('DOMContentLoaded', main);
+// window.addEventListener('DOMContentLoaded', main);
 
-function main() {
-  fadeoutNoneActivePage()
-  detectCurrentpage()
-}
+// function main() {
+//  detectCurrentPage()
+// }
 
-function detectCurrentpage() {
-
-if (document.URL == 'index.html'){
 const text = [' Front End ', ' UX ', ' Web '];
-let counter = 0;
 const timer = setInterval(changeWord, 3000);
-  } console.log('hello');
-}
+let counter = 0;
+
 
 
 function changeWord () {
@@ -26,9 +21,19 @@ function changeWord () {
   
 }
 
-  function fadeoutNoneActivePage () {
-    const rightPage = document.querySelector('.right')
-  if (document.URL === ('./projects.html') || ('./contact.html')) {
-    rightPage.style.backgroundcolor = 'black'
-  } console.log('didnt work')
+
+function toggle() {
+  var div = document.getElementById('hidden')
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
   }
+}
+
+  // function fadeoutNoneActivePage (currentPage) {
+  //   const rightPage = document.getElementById('fade-out')
+  //   if (currentPage !== 'index.html') {
+  //   rightPage.style.color = 'black'
+  // } else console.log('not working')
+  // }

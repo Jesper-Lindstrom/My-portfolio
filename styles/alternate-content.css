@@ -29,10 +29,35 @@
   object-fit: cover;
 }
 
+.contact-container {
+  border: 1px solid white;
+  font-size: clamp(0.8rem, 1.9vw, 1.4rem);
+  width: auto;
+  color: white;
+  background-color: rgba(0, 31, 63, 0.308);
+}
 
+.small-icon {
+  
+  width: 2rem;
+}
+
+.small-icon:hover {
+  background-color: white;
+  border-radius: 25%;
+}
 
 @media only screen and (max-width: 1200px) {
   .project-container{
     flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 560px) {
+  .contact-container{
+  width: 11rem;
+  overflow-wrap: break-word ;
+  
+    }
+}
+

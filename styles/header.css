@@ -1,9 +1,10 @@
 header {
+    top: 0;
     background-color: #252525ef;
     color: white;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    z-index: 10;
+
 }
 
 .avatar {
@@ -13,7 +14,7 @@ header {
     border-radius: 50%;
 }
 
-.nav-item, .cv-button {
+.nav-item, .hidde-nav-item .cv-button {
     font-size: 1.2rem;
 }
 
@@ -36,6 +37,15 @@ header {
   font-size: 2rem;
 }
 
+.hidden {
+  /* display: none; */
+  width: 100%;
+  background-color: #252525ef;
+  /* top: 8rem; */
+  position: fixed;
+  color: white;
+}
+
 
 @media only screen and (max-width: 774px) {
   .nav-item {
@@ -43,10 +53,11 @@ header {
   }
   .my-name {
     display: none;
-}
+  }
+ 
 }
 
-@media only screen and (min-width: 775px) {
+@media only screen and (min-width: 776px) {
   .burger-menu-button {
     display: none;
   }

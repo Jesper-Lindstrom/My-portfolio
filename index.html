@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/header-mobile.css" />
     <link rel="stylesheet" href="./styles/alternate-content.css" />
-    <link rel="stylesheet" href="./styles/changing-word.css" />
   </head>
   <body>
     <header>
@@ -22,17 +21,17 @@
         <div class="user flex m1 p1 gap1 align-center">
           <img class="avatar" src="./images/avatarbigger.png" alt="" />
           <p class="my-name">Jesper Lindström</p>
-          <i class="burger-menu-button fa-solid fa-bars"></i>
+          <i class="burger-menu-button fa-solid fa-bars" onclick="toggle()"></i>
         </div>
         <ul class="nav-items-list flex gap1 m1 p1">
           <li class="nav-item p1 flex justify-center">
             <a class="menu-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item p1 flex justify-center">
-            <a class="menu-link" href="projects.html">Projects</a>
+            <a class="menu-link" href="/projects.html">Projects</a>
           </li>
           <li class="nav-item p1 flex justify-center">
-            <a class="menu-link" href="contact.html">Contact</a>
+            <a class="menu-link" href="/contact.html">Contact</a>
           </li>
 
           <li class="cv-button p1 flex justify-center">
@@ -44,13 +43,40 @@
           </li>
         </ul>
       </div>
+      <div id="#hidden" class="hidden flex align-center justify-center">
+        <ul class="nav-items-list flex">
+          <li class="hidden-nav-item p1 flex justify-center">
+            <a class="menu-link" href="/index.html">Home</a>
+          </li>
+          <li class="hidden-nav-item p1 flex justify-center">
+            <a class="menu-link" href="/projects.html">Projects</a>
+          </li>
+          <li class="hidden-nav-item p1 flex justify-center">
+            <a class="menu-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
+    <!-- 
+    <div class="hidden">
+      <ul class="nav-items-list flex">
+        <li class="hidden-nav-item p1 flex justify-center">
+          <a class="menu-link" href="/index.html">Home</a>
+        </li>
+        <li class="hidden-nav-item p1 flex justify-center">
+          <a class="menu-link" href="/projects.html">Projects</a>
+        </li>
+        <li class="hidden-nav-item p1 flex justify-center">
+          <a class="menu-link" href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div> -->
 
     <div class="main-content flex">
       <div class="split left flex justify-center">
         <div class="left-content flex column ali p1 m1">
           <h1 class="p1">
-            <p id="changing-word"></p>
+            <p id="changing-word">Web</p>
             Developer
           </h1>
           <h3 class="p1">
@@ -74,7 +100,7 @@
           </div>
         </div>
       </div>
-      <div class="split right flex justify-center align-center">
+      <div id="fade-out" class="split right flex justify-center align-center">
         <div class="right-content flex column justify-center align-center p1">
           <img class="big-avatar" src="./images/Avatarbigger.png" alt="" />
           <div class="p1">

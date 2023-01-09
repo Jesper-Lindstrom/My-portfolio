@@ -28,6 +28,11 @@ body {
         overflow-y: auto;
 }
 
+
+.my-name {
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
+}
+
 .my-name::before {
   font-size: 20px;
   content: '<';
@@ -42,7 +47,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2rem, 2.3vw, 3.5rem);
+  font-size: clamp(1.2rem, 2.2vw, 3.5rem);
 }
 
 h3 {
@@ -51,7 +56,7 @@ h3 {
 }
 
 #changing-word {
-  color: rgb(250, 250, 250);
+  color: rgb(245, 0, 0);
 }
 
 #changing-word::after {
@@ -67,7 +72,6 @@ h3 {
     width: 50%;
     position: static;
   
-    z-index: 1;
 } 
  .left {
     background-color: #234E70;
@@ -84,6 +88,7 @@ h3 {
     align-items: center;
     /* height: 100vh; */
     color: #00203FFF;
+  
 } 
 
 .big-avatar {
@@ -120,9 +125,19 @@ a, a:visited {
 .m0 {margin: 0;}
 .m1 {margin: 1rem;}
 .gap1 {gap: 1rem;}
+.border {border: 2px solid white;}
 
 
 @keyframes blink {
   0% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+@media only screen and (max-width: 774px) {
+  .left-content{
+    margin: 0;
+    padding: 0;
+  }
+ 
+ 
 }
