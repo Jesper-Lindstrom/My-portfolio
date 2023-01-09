@@ -25,7 +25,7 @@ body {
         #00203FFF 50%,
         #ADEFD1FF 50%,
         #ADEFD1FF 100%);
-        overflow-y: auto;
+        /* overflow-y: auto; */
 }
 
 
@@ -78,7 +78,6 @@ h3 {
     display: flex;
     max-width: 50%;
     align-items: center;
-    /* height: 91vh; */
     color: #ADEFD1FF;
     
 }
@@ -86,7 +85,6 @@ h3 {
     display: flex;
     max-width: 50%;
     align-items: center;
-    /* height: 100vh; */
     color: #00203FFF;
   
 } 
@@ -95,9 +93,6 @@ h3 {
     width: clamp(10rem, 50%, 30rem);
     height: clamp(10rem, 50%, 30rem);
     border-radius: 10rem;
-    /* box-shadow: -5px -5px 1px 1px; */
-    /* border: #234E70 40px solid;  */
-    
     object-fit: cover;
 }
 
@@ -111,8 +106,6 @@ a, a:visited {
   text-decoration: none;
   
 }
-
-
 
 /* reusable ccs-classes */
 
