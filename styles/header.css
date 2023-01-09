@@ -40,10 +40,14 @@ header {
 .hidden {
   /* display: none; */
   width: 100%;
-  background-color: #252525ef;
-  /* top: 8rem; */
-  position: fixed;
+  background-color: #252222ef;
+  top: 8rem;
+  /* position: fixed; */
   color: white;
+}
+
+.close {
+  display: none;
 }
 
 
@@ -54,6 +58,7 @@ header {
   .my-name {
     display: none;
   }
+  
  
 }
 
@@ -61,4 +66,12 @@ header {
   .burger-menu-button {
     display: none;
   }
+  
 }
+
+
+
+
+
+
+

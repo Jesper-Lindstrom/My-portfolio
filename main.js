@@ -13,23 +13,32 @@ let counter = 0;
 
 function changeWord () {
   let span = document.getElementById('changing-word');
+  if (document.body.contains( document.getElementById('changing-word'))) {
   span.textContent = text[counter];
   counter++; 
-  if (counter >= text.length) {
+    if (counter >= text.length) {
     counter = 0;
+    } 
   }
-  
 }
-
 
 function toggle() {
-  var div = document.getElementById('hidden')
-  if (div.style.display === "none") {
-    div.style.display = "block";
-  } else {
-    div.style.display = "none";
-  }
+  const dropdown = document.getElementById('hidden');
+  dropdown.classList.toggle('close')
+
 }
+
+
+
+
+// function toggle() {
+//   const navbar = document.getElementById('hidden')
+//   if (navbar.style.display === "none") {
+//     navbar.style.display = "block";
+//   } else {
+//     navbar.style.display = "none";
+//   }
+// }
 
   // function fadeoutNoneActivePage (currentPage) {
   //   const rightPage = document.getElementById('fade-out')

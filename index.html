@@ -12,7 +12,7 @@
     ></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/header-mobile.css" />
+    <!-- <link rel="stylesheet" href="./styles/header-mobile.css" /> -->
     <link rel="stylesheet" href="./styles/alternate-content.css" />
   </head>
   <body>
@@ -21,7 +21,11 @@
         <div class="user flex m1 p1 gap1 align-center">
           <img class="avatar" src="./images/avatarbigger.png" alt="" />
           <p class="my-name">Jesper Lindström</p>
-          <i class="burger-menu-button fa-solid fa-bars" onclick="toggle()"></i>
+          <i
+            id="burger-menu"
+            class="burger-menu-button fa-solid fa-bars"
+            onclick="toggle()"
+          ></i>
         </div>
         <ul class="nav-items-list flex gap1 m1 p1">
           <li class="nav-item p1 flex justify-center">
@@ -43,7 +47,7 @@
           </li>
         </ul>
       </div>
-      <div id="#hidden" class="hidden flex align-center justify-center">
+      <div id="hidden" class="hidden flex align-center justify-center">
         <ul class="nav-items-list flex">
           <li class="hidden-nav-item p1 flex justify-center">
             <a class="menu-link" href="/index.html">Home</a>
