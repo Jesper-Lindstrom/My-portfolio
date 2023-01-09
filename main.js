@@ -2,13 +2,18 @@
 window.addEventListener('DOMContentLoaded', main);
 
 function main() {
-  TypeWriter()
+  fadeoutNoneActivePage()
+  detectCurrentpage()
 }
 
+function detectCurrentpage() {
+
+if (document.URL == 'index.html'){
 const text = [' Front End ', ' UX ', ' Web '];
 let counter = 0;
 const timer = setInterval(changeWord, 3000);
-
+  } console.log('hello');
+}
 
 
 function changeWord () {
@@ -21,6 +26,9 @@ function changeWord () {
   
 }
 
-
-// if currentpage = fade höger eller vänster
-//  window.location.href
+  function fadeoutNoneActivePage () {
+    const rightPage = document.querySelector('.right')
+  if (document.URL === ('./projects.html') || ('./contact.html')) {
+    rightPage.style.backgroundcolor = 'black'
+  } console.log('didnt work')
+  }
