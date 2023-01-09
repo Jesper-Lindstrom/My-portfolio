@@ -94,7 +94,10 @@ h3 {
 .big-avatar {
     width: clamp(10rem, 50%, 30rem);
     height: clamp(10rem, 50%, 30rem);
-    border-radius: 50%;
+    border-radius: 10rem;
+    /* box-shadow: -5px -5px 1px 1px; */
+    /* border: #234E70 40px solid;  */
+    
     object-fit: cover;
 }
 
